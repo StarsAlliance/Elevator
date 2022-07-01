@@ -7,7 +7,7 @@
     <ProjectGuid>{A75677FC-CB88-48FB-8B03-7FA72B650F94}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Elevator</RootNamespace>
-    <AssemblyName>autorun</AssemblyName>
+    <AssemblyName>elevator</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>fl.ico</ApplicationIcon>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -59,11 +59,12 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="IniFile.cs" />
     <Compile Include="elevator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fl.ico" />
+    <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
